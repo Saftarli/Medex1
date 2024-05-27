@@ -9,8 +9,8 @@ services:
     volumes:
       - .:/srv/app
     ports:
-      - '0.0.0.0:4000:4000'
-    command: python manage.py runserver 0.0.0.0:4000
+      - '0.0.0.0:2500:2500'
+    command: python manage.py runserver 0.0.0.0:2500
 
 volumes:
   static-data:
