@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +10,14 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="css/animate.css">
-  
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
-  
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
+  <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
  <div class="py-1 top">
@@ -95,7 +93,7 @@
 </nav>
 <!-- END nav -->
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{% get_media_prefix %}images/bg_1.jpg');" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-start">
@@ -114,13 +112,13 @@
         <h2 class="mb-3">It is a long established fact a reader be distracted</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
         <p>
-          <img src="images/image_3.jpg" alt="" class="img-fluid">
+          <img src="{% get_media_prefix %}images/image_3.jpg" alt="" class="img-fluid">
         </p>
         <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
         <h2 class="mb-3 mt-5">#2. Creative WordPress Themes</h2>
         <p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
         <p>
-          <img src="images/image_4.jpg" alt="" class="img-fluid">
+          <img src="{% get_media_prefix %}images/image_4.jpg" alt="" class="img-fluid">
         </p>
         <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
         <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
@@ -137,7 +135,7 @@
         
         <div class="about-author d-flex p-4 bg-light">
           <div class="bio mr-5">
-            <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+            <img src="{% get_media_prefix %}images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
           </div>
           <div class="desc">
             <h3>George Washington</h3>
@@ -151,7 +149,7 @@
           <ul class="comment-list">
             <li class="comment">
               <div class="vcard bio">
-                <img src="images/person_1.jpg" alt="Image placeholder">
+                <img src="{% get_media_prefix %}images/person_1.jpg" alt="Image placeholder">
               </div>
               <div class="comment-body">
                 <h3>John Doe</h3>
@@ -163,7 +161,7 @@
 
             <li class="comment">
               <div class="vcard bio">
-                <img src="images/person_1.jpg" alt="Image placeholder">
+                <img src="{% get_media_prefix %}images/person_1.jpg" alt="Image placeholder">
               </div>
               <div class="comment-body">
                 <h3>John Doe</h3>
@@ -175,7 +173,7 @@
               <ul class="children">
                 <li class="comment">
                   <div class="vcard bio">
-                    <img src="images/person_1.jpg" alt="Image placeholder">
+                    <img src="{% get_media_prefix %}images/person_1.jpg" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
                     <h3>John Doe</h3>
@@ -188,7 +186,7 @@
                   <ul class="children">
                     <li class="comment">
                       <div class="vcard bio">
-                        <img src="images/person_1.jpg" alt="Image placeholder">
+                        <img src="{% get_media_prefix %}images/person_1.jpg" alt="Image placeholder">
                       </div>
                       <div class="comment-body">
                         <h3>John Doe</h3>
@@ -200,7 +198,7 @@
                       <ul class="children">
                         <li class="comment">
                           <div class="vcard bio">
-                            <img src="images/person_1.jpg" alt="Image placeholder">
+                            <img src="{% get_media_prefix %}images/person_1.jpg" alt="Image placeholder">
                           </div>
                           <div class="comment-body">
                             <h3>John Doe</h3>
@@ -218,7 +216,7 @@
 
             <li class="comment">
               <div class="vcard bio">
-                <img src="images/person_1.jpg" alt="Image placeholder">
+                <img src="{% get_media_prefix %}images/person_1.jpg" alt="Image placeholder">
               </div>
               <div class="comment-body">
                 <h3>John Doe</h3>
@@ -284,7 +282,7 @@
       <div class="sidebar-box ftco-animate">
         <h3 class="heading-sidebar">Recent Blog</h3>
         <div class="block-21 mb-4 d-flex">
-          <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+          <a class="blog-img mr-4" style="background-image: url({% get_media_prefix %}images/image_1.jpg);"></a>
           <div class="text">
             <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
             <div class="meta">
@@ -295,7 +293,7 @@
           </div>
         </div>
         <div class="block-21 mb-4 d-flex">
-          <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+          <a class="blog-img mr-4" style="background-image: url({% get_media_prefix %}images/image_2.jpg);"></a>
           <div class="text">
             <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
             <div class="meta">
@@ -306,7 +304,7 @@
           </div>
         </div>
         <div class="block-21 mb-4 d-flex">
-          <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+          <a class="blog-img mr-4" style="background-image: url({% get_media_prefix %}images/image_3.jpg);"></a>
           <div class="text">
             <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
             <div class="meta">
@@ -342,111 +340,29 @@
 </div>
 </section> <!-- .section -->
 
-<footer class="ftco-footer">
-  <div class="container mb-5 pb-4">
-    <div class="row">
-      <div class="col-lg col-md-6">
-        <div class="ftco-footer-widget">
-          <h2 class="ftco-heading-2 logo d-flex align-items-center"><a href="#"><span class="flaticon-health flaticon"></span><span>Medex</span></a></h2>
-          <p>Far far away, behind the word mountains, far from the countries.</p>
-          <ul class="ftco-footer-social list-unstyled mt-4">
-            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg col-md-6">
-        <div class="ftco-footer-widget">
-          <h2 class="ftco-heading-2">Departments</h2>
-          <ul class="list-unstyled">
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Neurology</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Ophthalmology</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Nuclear Magnetic</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>X-Ray</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Surgical</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Cardiology</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Dental</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg col-md-6">
-        <div class="ftco-footer-widget">
-          <h2 class="ftco-heading-2">Links</h2>
-          <ul class="list-unstyled">
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Departments</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Doctors</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Pricing</a></li>
-            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-lg col-md-6">
-       <div class="ftco-footer-widget">
-        <h2 class="ftco-heading-2">Services</h2>
-        <ul class="list-unstyled">
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Emergency Help</a></li>
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Qualified Doctors</a></li>
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Location &amp; Directions</a></li>
-          <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Medical Treatment</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="col-lg col-md-6">
-      <div class="ftco-footer-widget">
-       <h2 class="ftco-heading-2">Have a Questions?</h2>
-       <div class="block-23 mb-3">
-         <ul>
-           <li><span class="fa fa-map-marker mr-3"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-           <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+2 392 3929 210</span></a></li>
-           <li><a href="#"><span class="fa fa-paper-plane mr-3"></span><span class="text">info@yourdomain.com</span></a></li>
-         </ul>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-<div class="container-fluid bg-primary py-5">
- <div class="row">
-  <div class="col-md-12 text-center">
-   
-    <p class="mb-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-    </div>
-  </div>
-</div>
-</footer>
+{% include 'includes/footer.html' %}
 
 
 
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate-3.0.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.animateNumber.min.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<script src="js/jquery.timepicker.min.js"></script>
-<script src="js/scrollax.min.js"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+<script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
+<script src="{% static 'js/scrollax.min.js' %}"></script>
+<script src="{% static 'js/google-map.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="js/google-map.js"></script>
-
-<script src="js/main.js"></script>
 
 </body>
 </html>

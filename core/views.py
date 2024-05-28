@@ -38,3 +38,5 @@ def gallery(request):
     return render(request, 'gallery.html')
 
 
+def blogsingle(request):
+    return render(request, 'blogsingle.html')
